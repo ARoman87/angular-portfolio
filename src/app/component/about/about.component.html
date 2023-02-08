@@ -1,0 +1,106 @@
+<div class="aboutSection" id="about">
+    <p class="sectionTitles">About Me</p>
+    <div class="aboutBody" inViewport
+    [inViewportOptions]="{ threshold: [0] }"
+    (inViewportAction)="onIntersection($event)"
+    >
+        <p>
+            Hello, my name is <span class="important">Angel Roman</span> and this is my backstory. After finishing my Bachelor in Criminal Justice in 2012 I decided to further my education and take classes in Information Technology. The more programming classes I took, the more I fell in love with software development. This coincided with the conclusion of my military commitment and I took the next several years to focus on a career in law enforcement and spend time concentrating on my young family. Although I had put my education on hold, I still continued to take courses to further my IT knowledge. Fast forward to 2021, I decided to jump back in and become a <span class="important">Software Engineer.</span> In 2022, I graduated with a <span class="coral">Bachelor in Information Technology</span> with a Concentration in <span class="important">Software Development.</span> In earning this degreeI have learned multiple languages and am ready to find the next challenge in my career where I am able to use these skills.
+        </p>
+            <br/>
+        <p>
+            Outside of programming, I have both a military and law enforcement background. I served 5 years in the <span class="coral">United States Marine Corps</span> where I worked on electronic countermeasures for all Marine Corps helicopters. While in this capacity I was responsible for the training and operation of squadrons of up to 1,000 Marines. My 6 years of Law Enforcement helped to solidify my ability to work with multiple departments as well as various federal agencies which has helped to cultivate an understanding of <span class="important">team building, personal growth and gained wisdom.</span> 
+        </p>
+            <br/>
+        <p>
+            So why would you want to have <span class="coral">ME</span> on your team? What I do not have in experience, I do have in <span class="important">enthusiasm.</span> Enthusiasm to solve problems, work with a team or just the enthusiasm to take on a solo project and work it until I have a solution. I bring a mindset of <span class="coral">wonder</span>, where I can bring critical skills to remove single points of failure through my tenacity. I'm not afraid to ask questions, because it can result in creative ideas .I don't have a programming background which means I don't have preconceived ideas which allow for new and fresh solutions. <span class="important">I have adapted</span> to change throughout my career and I feel it has helped me to learn quickly and work well in both a team and individual setting. I believe the best teams are made up of individuals with the most diverse backgrounds and experiences and <span class="coral">I hope to become a part of yours.</span>
+        </p>
+        <a href={resume} target="_blank"><button class="resumeButton">Download Resume</button></a>
+    </div>
+    <div class="skills "
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)" >
+        <p>Skills</p>
+        <div class="skillsIcons">
+            <figure>
+                <img src="../../../assets/React-icon.png" alt="React Icon" />
+                <figcaption>React</figcaption>
+            </figure>
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Icon" />
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure>
+                <img src="../../../assets/node.png" alt="Node Icon" />
+                <figcaption>Node JS</figcaption>
+            </figure>
+            <figure>
+                <img src="https://skillshack.blob.core.windows.net/uploads/express.webp" alt="Express Icon" />
+                <figcaption>Express JS</figcaption>
+            </figure>
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB Icon" />
+                <figcaption>MongoDB</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Icon" />
+                <figcaption>Python</figcaption>
+            </figure>
+            <figure>
+                <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django Icon" />
+                <figcaption>Django</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git Icon" />
+                <figcaption>Git</figcaption>
+            </figure>
+            <figure>
+                <img src="../../../assets/github1.png" alt="Github Icon" />
+                <figcaption>GitHub</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="TailWind Icon" />
+                <figcaption>TailWind CSS</figcaption>
+            </figure>
+            
+        </div>
+
+        <p>Exposure</p>
+        <div class="skillsIcons">
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript Icon" />
+                <figcaption>TypeScript</figcaption>
+            </figure>
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux Icon" />
+                <figcaption>Redux</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++ Icon" />
+                <figcaption>C++</figcaption>
+            </figure>
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Icon" />
+                <figcaption>Java</figcaption>
+            </figure>
+            <figure>
+                <img src="../../../assets/postgres.png" alt="" />
+                <figcaption>PostgreSQL</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite Icon" />
+                <figcaption>SQLite</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma Icon" />
+                <figcaption>Figma</figcaption>
+            </figure>
+            
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,65 @@
+<div class="projectSection" id="projects">
+    <p class="sectionTitles">Projects</p>
+    <div class="theProjects" *ngFor="let project of data"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)"
+    >
+            <div *ngIf="project.id % 2 === 0">
+                <div class="projectContainer ">
+                    <div class="projectImage">
+                        <a href={{project.live}} target="_blank"><img src={{project.img}} alt="" /></a> 
+                    </div>
+                    <div class="projectSide">
+                        <a href={{project.live}} target="_blank">
+                            <p class="projectTitle titleInverted">{{project.name}}</p>
+                        </a> 
+                        <p class="projectDescription " [innerHTML]="project.description"></p>
+                        <div class="tools">
+                            <ul>
+                                <li *ngFor="let tools of project.tools">{{tools}}</li>
+                            </ul>
+                        </div>
+                        <div class="projectButtons">
+                            <a href={{project.code}} target="_blank"><i className="fa fa-github"></i></a>
+                            <a href={{project.live}} target="_blank"><i className="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="project.id % 2 !== 0">
+                <div class="projectContainer containerInverted">
+                    <div class="projectImage">
+                        <a href={{project.live}} target="_blank"><img src={{project.img}} alt="" /></a> 
+                    </div>
+                    <div class="projectSide">
+                        <a href={{project.live}} target="_blank">
+                            <p class="projectTitle titleInverted">{{project.name}}</p>
+                        </a> 
+                        <p class="projectDescription descriptionInverted" [innerHTML]="project.description"></p>
+                        <div class="tools">
+                            <ul>
+                                <li *ngFor="let tools of project.tools">{{tools}}</li>
+                            </ul>
+                        </div>
+                        <div class="projectButtons">
+                            <a href={{project.code}} target="_blank"><i className="fa fa-github"></i></a>
+                            <a href={{project.live}} target="_blank"><i className="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+        
+    </div>
+
+
+    <div class="codingActivity">
+        <p>Github Coding Activity 2022</p>
+        <img src="https://ghchart.rshah.org/108900/aroman87" alt="coding activity" />
+    </div>
+</div>

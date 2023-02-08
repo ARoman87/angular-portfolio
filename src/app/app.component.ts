@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-portfolio';
+  loading = true
+
+  ngOnInit() {
+    this.load()
+  }
+
+  load() {
+    this.loading = true
+    setTimeout(() => {
+      this.loading = false
+    }, 3000)
+  }
+  
 }
